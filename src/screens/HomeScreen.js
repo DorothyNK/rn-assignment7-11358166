@@ -46,7 +46,7 @@ export default function HomeScreen() {
 
   useEffect(() => {
     const getdata = async () => {
-      const res = await fetch("https://fakestoreapi.com/products?limit=14");
+      const res = await fetch("https://fakestoreapi.com/products?limit=20");
       try {
         const response = await res.json();
         setData(response);
